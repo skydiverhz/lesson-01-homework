@@ -91,14 +91,13 @@ puts join_strings((8 + 1),17)
 
 ## Enter your 'old_enough_to_vote?' method below
 
-def old_enough_to_vote(myage = 21)
-  if myage >= 18
-    puts "We're counting on your vote this year"
-  else
-    puts "Come back after your 18th birthday"
+def old_enough_to_vote(birth_year)
+  if 2016 - birth_year >= 18
+    puts "Yes"
+  else puts "No"
   end
 end
 
-old_enough_to_vote(15)
-old_enough_to_vote(19)
-old_enough_to_vote(60)
+old_enough_to_vote(1997)
+old_enough_to_vote(2001)
+old_enough_to_vote(2020)
